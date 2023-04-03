@@ -67,12 +67,14 @@ class Healer(Character):
 def start_training(character) -> str:
     commands = {'attack': character.attack, 'defence': character.defence, 'special': character.special}
     """Тренировка после создания персонажа."""
+    
     if character.__class__.__name__ == 'Warrior':
         print(f'{char_name}, ты Воитель — отличный боец ближнего боя.')
     if character.__class__.__name__ == 'Mage':
         print(f'{char_name}, ты Маг — превосходный укротитель стихий.')
     if character.__class__.__name__ == 'Healer':
         print(f'{char_name}, ты Лекарь — чародей, способный исцелять раны.')
+        
     print('Потренируйся управлять своими навыками.')
     print('Введи одну из команд: attack — чтобы атаковать противника, defence'
           ' — чтобы блокировать атаку противника или special — чтобы '
